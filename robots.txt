@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /dashboard/
+
+Sitemap: https://maheswari9080.github.io/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/sitemap.xml
