@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "vitest run"
+    "test": "node ./node_modules/vitest/vitest.mjs run"
   },
   "dependencies": {
     "@supabase/ssr": "^0.5.2",
