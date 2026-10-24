@@ -19,7 +19,7 @@
 
 **CreatorFlow AI** is a production-grade AI micro-SaaS engineered following the **TITAN** (*Target, Interface, Technology, AI, Non-negotiable quality*) and **FUSION** (*Foundation, UX, Secure AI, Integration & Launch*) software architecture frameworks.
 
-[Live Demo](http://localhost:3000) • [Architecture](#-system-architecture) • [Features](#-core-capabilities--features) • [Database & Security](#-database-schema--rls-isolation) • [Quickstart](#-quickstart-guide) • [LinkedIn Launch](./LINKEDIN.md)
+[Live Demo (GitHub Pages)](https://maheswari9080.github.io/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/) • [Deployment Guide](./DEPLOYMENT.md) • [Architecture](#-system-architecture) • [Features](#-core-capabilities--features) • [Database & Security](#-database-schema--rls-isolation) • [Quickstart](#-quickstart-guide) • [LinkedIn Launch](./LINKEDIN.md)
 
 ---
 
@@ -157,10 +157,20 @@ npm test
 ```
 Runs the 100% passing Vitest automated test suite covering authentication, API endpoints, schema validation, and component state transitions.
 
-### 5. Build for Production
+### 5. Build for Production & Static Export
 ```bash
 npm run build
 ```
+Generates a pre-rendered, optimized static export in the `./out` directory ready for deployment.
+
+### 6. GitHub Pages Deployment (Automated via GitHub Actions)
+To enable automated deployment for this repository:
+1. Navigate to **Settings** ➔ **Pages** in this repository.
+2. Under **Build and deployment** ➔ **Source**, select **`GitHub Actions`**.
+3. Push to `main` — the workflow [`.github/workflows/deploy-pages.yml`](./.github/workflows/deploy-pages.yml) will automatically run tests, build the static export, and publish to:  
+   👉 **`https://maheswari9080.github.io/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/`**
+
+For comprehensive multi-environment deployment steps (including Vercel + Supabase), refer to [`DEPLOYMENT.md`](./DEPLOYMENT.md).
 
 ---
 

@@ -24,6 +24,7 @@ import {
   Campaign,
   AIGenerateResponse,
 } from "@/types/database";
+import { generateDomainCopy } from "@/lib/ai/generator";
 
 export function AIStudio() {
   const { user } = useAuth();
@@ -94,10 +95,36 @@ export function AIStudio() {
     setIsGenerating(true);
 
     try {
-      const res = await fetch("/api/ai/generate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+      let data: AIGenerateResponse | null = null;
+      try {
+        const res = await fetch("/api/ai/generate", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            topic: topic.trim(),
+            targetAudience: targetAudience.trim(),
+            platform,
+            contentType,
+            tone,
+            objective,
+            keywords: keywords
+              ? keywords
+                  .split(",")
+                  .map((k) => k.trim())
+                  .filter(Boolean)
+              : undefined,
+          }),
+        });
+
+        if (res.ok) {
+          data = await res.json();
+        }
+      } catch {
+        // Fallback to client-side generation engine for static export / GitHub Pages
+      }
+
+      if (!data) {
+        data = generateDomainCopy({
           topic: topic.trim(),
           targetAudience: targetAudience.trim(),
           platform,
@@ -110,13 +137,7 @@ export function AIStudio() {
                 .map((k) => k.trim())
                 .filter(Boolean)
             : undefined,
-        }),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        throw new Error(data.error || "Generation request failed.");
+        });
       }
 
       setResult(data);

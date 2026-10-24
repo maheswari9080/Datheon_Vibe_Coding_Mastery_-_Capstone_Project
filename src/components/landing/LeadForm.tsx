@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Send, CheckCircle2, AlertCircle, Sparkles, Loader2 } from "lucide-react";
+import { dataStore } from "@/lib/store";
 
 export function LeadForm() {
   const [name, setName] = useState("");
@@ -29,20 +30,32 @@ export function LeadForm() {
     setStatus("loading");
 
     try {
-      const res = await fetch("/api/leads", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+      let saved = false;
+      try {
+        const res = await fetch("/api/leads", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: name.trim(),
+            email: email.trim(),
+            message: message.trim() || undefined,
+          }),
+        });
+
+        if (res.ok) {
+          saved = true;
+        }
+      } catch {
+        // Fallback for static hosting / GitHub Pages
+      }
+
+      // If server route is unavailable on static hosting, store locally
+      if (!saved) {
+        dataStore.saveLead({
           name: name.trim(),
           email: email.trim(),
           message: message.trim() || undefined,
-        }),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        throw new Error(data.error || "Failed to submit request.");
+        });
       }
 
       setStatus("success");

@@ -5,7 +5,7 @@
   "description": "AI-Powered Content Planning and Campaign Management Platform for Creators",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node ./node_modules/next/dist/bin/next build",
     "start": "next start",
     "lint": "next lint",
     "test": "node ./node_modules/vitest/vitest.mjs run"
