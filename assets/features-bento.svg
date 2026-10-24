@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 540" width="1100" height="540">
+  <defs>
+    <linearGradient id="bentoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <filter id="bentoShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="1100" height="540" rx="16" fill="url(#bentoBg)" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Bento Header -->
+  <g transform="translate(50, 40)">
+    <rect width="180" height="26" rx="13" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+    <text x="90" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#4F46E5" text-anchor="middle">CORE VALUE PILLARS</text>
+    <text x="0" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#0F172A">Built for Complete Publishing Mastery</text>
+    <text x="0" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="#64748B">Four foundational capabilities engineered to take content from vague ideas to measurable ROI</text>
+  </g>
+
+  <!-- 4 BENTO CARDS -->
+
+  <!-- CARD 1: Strategic Campaign Hub -->
+  <g transform="translate(50, 140)" filter="url(#bentoShadow)">
+    <rect width="480" height="170" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="20" y="18" width="40" height="40" rx="10" fill="#EEF2FF"/>
+    <text x="40" y="44" font-family="sans-serif" font-size="20" fill="#4F46E5" text-anchor="middle">🎯</text>
+
+    <text x="74" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="800" fill="#0F172A">Strategic Campaign Hub</text>
+    <text x="74" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#6366F1">Anchor content to commercial objectives</text>
+
+    <text x="20" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#475569">
+      <tspan x="20" dy="0">Define target audience personas, quarterly milestones, and business goals.</tspan>
+      <tspan x="20" dy="20">Every post is anchored to high-intent milestones rather than random churn.</tspan>
+    </text>
+
+    <!-- Mini tags -->
+    <g transform="translate(20, 130)">
+      <rect width="115" height="24" rx="6" fill="#F1F5F9"/>
+      <text x="57" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Audience Personas</text>
+
+      <rect x="123" width="120" height="24" rx="6" fill="#F1F5F9"/>
+      <text x="183" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Quarterly Milestones</text>
+
+      <rect x="251" width="95" height="24" rx="6" fill="#F1F5F9"/>
+      <text x="298" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Target Metrics</text>
+    </g>
+  </g>
+
+  <!-- CARD 2: Explainable AI Studio -->
+  <g transform="translate(570, 140)" filter="url(#bentoShadow)">
+    <rect width="480" height="170" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="20" y="18" width="40" height="40" rx="10" fill="#F5F3FF"/>
+    <text x="40" y="44" font-family="sans-serif" font-size="20" fill="#7C3AED" text-anchor="middle">⚡</text>
+
+    <text x="74" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="800" fill="#0F172A">Explainable AI Content Studio</text>
+    <text x="74" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#7C3AED">No generic fluff • Platform-calibrated copy</text>
+
+    <text x="20" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#475569">
+      <tspan x="20" dy="0">Synthesizes hooks, body drafts, and CTAs tailored for LinkedIn and Twitter.</tspan>
+      <tspan x="20" dy="20">Features transparent reasoning explaining audience fit and engagement probability.</tspan>
+    </text>
+
+    <!-- Mini tags -->
+    <g transform="translate(20, 130)">
+      <rect width="125" height="24" rx="6" fill="#EEF2FF"/>
+      <text x="62" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#4338CA" text-anchor="middle">XAI Fit Score (98%)</text>
+
+      <rect x="133" width="105" height="24" rx="6" fill="#EEF2FF"/>
+      <text x="185" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#4338CA" text-anchor="middle">Multi-Format Copy</text>
+
+      <rect x="246" width="100" height="24" rx="6" fill="#EEF2FF"/>
+      <text x="296" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#4338CA" text-anchor="middle">1-Click Save</text>
+    </g>
+  </g>
+
+  <!-- CARD 3: Status Kanban Pipeline -->
+  <g transform="translate(50, 330)" filter="url(#bentoShadow)">
+    <rect width="480" height="170" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="20" y="18" width="40" height="40" rx="10" fill="#FEF3C7"/>
+    <text x="40" y="44" font-family="sans-serif" font-size="20" fill="#D97706" text-anchor="middle">📊</text>
+
+    <text x="74" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="800" fill="#0F172A">Kanban Status Pipeline</text>
+    <text x="74" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#D97706">Fluid idea-to-publication lifecycle</text>
+
+    <text x="20" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#475569">
+      <tspan x="20" dy="0">Track drafts seamlessly from Idea ➔ Draft ➔ In Review ➔ Scheduled ➔ Published.</tspan>
+      <tspan x="20" dy="20">Real-time status transitions with actionable campaign checklist reminders.</tspan>
+    </text>
+
+    <!-- Mini tags -->
+    <g transform="translate(20, 130)">
+      <rect width="100" height="24" rx="6" fill="#FEF3C7"/>
+      <text x="50" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#92400E" text-anchor="middle">Visual Kanban</text>
+
+      <rect x="108" width="105" height="24" rx="6" fill="#FEF3C7"/>
+      <text x="160" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#92400E" text-anchor="middle">Task Checklists</text>
+
+      <rect x="221" width="115" height="24" rx="6" fill="#FEF3C7"/>
+      <text x="278" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#92400E" text-anchor="middle">Instant Publishing</text>
+    </g>
+  </g>
+
+  <!-- CARD 4: Bank-Grade Data Security -->
+  <g transform="translate(570, 330)" filter="url(#bentoShadow)">
+    <rect width="480" height="170" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="20" y="18" width="40" height="40" rx="10" fill="#ECFDF5"/>
+    <text x="40" y="44" font-family="sans-serif" font-size="20" fill="#10B981" text-anchor="middle">🛡️</text>
+
+    <text x="74" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="800" fill="#0F172A">Bank-Grade RLS Isolation</text>
+    <text x="74" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#059669">PostgreSQL Row-Level Security policies</text>
+
+    <text x="20" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#475569">
+      <tspan x="20" dy="0">Strict tenant-level cryptographic isolation enforced at database engine level.</tspan>
+      <tspan x="20" dy="20">Every SQL query validates auth.uid() = user_id. Zero cross-account leakage.</tspan>
+    </text>
+
+    <!-- Mini tags -->
+    <g transform="translate(20, 130)">
+      <rect width="120" height="24" rx="6" fill="#ECFDF5"/>
+      <text x="60" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#065F46" text-anchor="middle">Zero Data Leakage</text>
+
+      <rect x="128" width="100" height="24" rx="6" fill="#ECFDF5"/>
+      <text x="178" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#065F46" text-anchor="middle">OWASP ASVS</text>
+
+      <rect x="236" width="115" height="24" rx="6" fill="#ECFDF5"/>
+      <text x="293" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#065F46" text-anchor="middle">Automated DB Test</text>
+    </g>
+  </g>
+</svg>

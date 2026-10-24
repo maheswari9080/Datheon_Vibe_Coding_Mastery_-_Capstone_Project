@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <radialGradient id="meshViolet" cx="85%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#E0E7FF" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#F5F3FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="meshTeal" cx="15%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#E0F2FE" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Brand Accent Gradient -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+
+    <!-- Card Shadow Filters -->
+    <filter id="shadowLg" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#0F172A" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#4F46E5" flood-opacity="0.05"/>
+    </filter>
+    <filter id="shadowSm" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="500" fill="url(#bgGrad)"/>
+  <rect width="1200" height="500" fill="url(#meshViolet)"/>
+  <rect width="1200" height="500" fill="url(#meshTeal)"/>
+
+  <!-- Subtle Modern Grid Lines -->
+  <g opacity="0.12" stroke="#4F46E5" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke-dasharray="6,6"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke-dasharray="6,6"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke-dasharray="6,6"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke-dasharray="6,6"/>
+    <line x1="300" y1="0" x2="300" y2="500" stroke-dasharray="6,6"/>
+    <line x1="600" y1="0" x2="600" y2="500" stroke-dasharray="6,6"/>
+    <line x1="900" y1="0" x2="900" y2="500" stroke-dasharray="6,6"/>
+  </g>
+
+  <!-- LEFT COLUMN: Typography & Identity -->
+  <g transform="translate(70, 75)">
+    <!-- Category Pill Badge -->
+    <rect width="270" height="32" rx="16" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1.2"/>
+    <circle cx="16" cy="16" r="5" fill="#4F46E5"/>
+    <text x="32" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#4338CA" letter-spacing="0.5">NEXT-GEN AI CONTENT ENGINE</text>
+
+    <!-- Main Title -->
+    <text x="0" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="800" fill="#0F172A" letter-spacing="-1">CreatorFlow <tspan fill="url(#brandGrad)">AI</tspan></text>
+
+    <!-- Subtitle & Value Proposition -->
+    <text x="0" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="600" fill="#334155">Elite AI Content Planning &amp; Campaign Orchestration</text>
+    <text x="0" y="155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="400" fill="#64748B">Conquer blank-page paralysis with strategic campaigns, explainable audience AI,</text>
+    <text x="0" y="177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="400" fill="#64748B">dynamic status pipelines, and bank-grade PostgreSQL Row-Level Security.</text>
+
+    <!-- Badges Row -->
+    <g transform="translate(0, 220)">
+      <!-- Next.js Badge -->
+      <rect width="98" height="28" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+      <text x="14" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#0F172A">Next.js 15</text>
+
+      <!-- React 19 Badge -->
+      <rect x="108" width="94" height="28" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+      <text x="122" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#0284C7">React 19</text>
+
+      <!-- Supabase RLS Badge -->
+      <rect x="212" width="132" height="28" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+      <circle cx="225" cy="14" r="4" fill="#10B981"/>
+      <text x="236" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#065F46">Supabase RLS</text>
+
+      <!-- TypeScript Badge -->
+      <rect x="354" width="108" height="28" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)"/>
+      <text x="368" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#2563EB">TypeScript 5</text>
+
+      <!-- Vitest Badge -->
+      <rect x="472" width="128" height="28" rx="6" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1" filter="url(#shadowSm)"/>
+      <text x="485" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#059669">✓ 100% Tests Pass</text>
+    </g>
+
+    <!-- Framework Architecture Callout -->
+    <g transform="translate(0, 275)">
+      <rect width="430" height="54" rx="10" fill="#FFFFFF" stroke="#E0E7FF" stroke-width="1.5" filter="url(#shadowSm)"/>
+      <rect x="12" y="12" width="30" height="30" rx="6" fill="#EEF2FF"/>
+      <text x="27" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" fill="#4F46E5" text-anchor="middle">⚡</text>
+      <text x="52" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#1E293B">Engineered on TITAN &amp; FUSION Frameworks</text>
+      <text x="52" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#64748B">Target • Interface • Technology • AI • Non-negotiable Quality</text>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: Elegant Floating UI Cards (Light Mode Preview) -->
+  <g transform="translate(680, 50)">
+    <!-- Background Ambient Card (Slight angle/depth) -->
+    <g filter="url(#shadowLg)" transform="translate(20, 20)">
+      <rect width="440" height="350" rx="16" fill="url(#cardGrad)" stroke="#E2E8F0" stroke-width="1.5"/>
+
+      <!-- Card Header -->
+      <rect width="440" height="48" rx="16" fill="#F8FAFC"/>
+      <rect y="47" width="440" height="1" fill="#E2E8F0"/>
+      <circle cx="24" cy="24" r="6" fill="#EF4444"/>
+      <circle cx="42" cy="24" r="6" fill="#F59E0B"/>
+      <circle cx="60" cy="24" r="6" fill="#10B981"/>
+      <text x="86" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#334155">CreatorFlow Studio • Live Session</text>
+      <rect x="340" y="14" width="76" height="22" rx="11" fill="#DCFCE7"/>
+      <text x="378" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#166534" text-anchor="middle">ACTIVE RLS</text>
+
+      <!-- Campaign Strategy Card -->
+      <g transform="translate(20, 68)">
+        <rect width="400" height="74" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#6366F1" letter-spacing="0.5">CURRENT CAMPAIGN</text>
+        <text x="16" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#0F172A">Q4 Micro-SaaS Product Hunt Launch</text>
+        <text x="16" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#64748B">Audience: Indie Hackers &amp; Solo Founders • Goal: 5,000 Signups</text>
+        <rect x="320" y="16" width="65" height="22" rx="11" fill="#FEF3C7"/>
+        <text x="352" y="31" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#92400E" text-anchor="middle">In Review</text>
+      </g>
+
+      <!-- AI Content Generation Box -->
+      <g transform="translate(20, 154)">
+        <rect width="400" height="110" rx="10" fill="#F8FAFC" stroke="#C7D2FE" stroke-width="1"/>
+        <rect width="400" height="28" rx="10" fill="#EEF2FF"/>
+        <rect y="27" width="400" height="1" fill="#E0E7FF"/>
+        <text x="16" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#4F46E5">✦ EXPLAINABLE AI STUDIO GENERATION</text>
+        <text x="330" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#059669">98% Match</text>
+        <text x="16" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#0F172A">"Most AI tools churn out noise. We built a campaign operating system."</text>
+        <text x="16" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#475569">✓ Calibrated for high-engagement LinkedIn &amp; Twitter storytelling.</text>
+        <text x="16" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#6366F1">AI Rationale: High specificity hook targeting maker psychology.</text>
+      </g>
+
+      <!-- Pipeline Stages Visual -->
+      <g transform="translate(20, 276)">
+        <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#64748B">CONTENT PIPELINE STAGES</text>
+        <g transform="translate(0, 24)">
+          <!-- Idea -->
+          <rect width="66" height="24" rx="12" fill="#F1F5F9"/>
+          <text x="33" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">Idea</text>
+
+          <text x="74" y="16" font-family="sans-serif" font-size="12" fill="#94A3B8">➔</text>
+
+          <!-- Draft -->
+          <rect x="88" width="66" height="24" rx="12" fill="#E0F2FE"/>
+          <text x="121" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#0284C7" text-anchor="middle">Draft</text>
+
+          <text x="162" y="16" font-family="sans-serif" font-size="12" fill="#94A3B8">➔</text>
+
+          <!-- Review -->
+          <rect x="176" width="70" height="24" rx="12" fill="#FEF3C7"/>
+          <text x="211" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#D97706" text-anchor="middle">Review</text>
+
+          <text x="254" y="16" font-family="sans-serif" font-size="12" fill="#94A3B8">➔</text>
+
+          <!-- Scheduled -->
+          <rect x="268" width="72" height="24" rx="12" fill="#F3E8FF"/>
+          <text x="304" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#7C3AED" text-anchor="middle">Scheduled</text>
+
+          <text x="348" y="16" font-family="sans-serif" font-size="12" fill="#94A3B8">➔</text>
+
+          <!-- Published -->
+          <rect x="362" width="46" height="24" rx="12" fill="#DCFCE7"/>
+          <text x="385" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#16A34A" text-anchor="middle">Live</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
