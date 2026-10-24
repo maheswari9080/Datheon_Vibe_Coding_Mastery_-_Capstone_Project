@@ -99,7 +99,7 @@ export async function POST(req: NextRequest) {
 }
 
 function generateDomainCopy(req: AIGenerateRequest): AIGenerateResponse {
-  const { topic, targetAudience, platform, tone, objective } = req;
+  const { topic, targetAudience, platform, tone, objective, contentType } = req;
 
   let headline = "";
   let draft = "";
@@ -207,7 +207,7 @@ function generateDomainCopy(req: AIGenerateRequest): AIGenerateResponse {
   return {
     headline,
     draft,
-    description: `A platform-optimized ${format} written in a ${tone} tone targeting ${targetAudience}.`,
+    description: `A platform-optimized ${contentType} written in a ${tone} tone targeting ${targetAudience}.`,
     callToAction,
     keywords,
     variations,
